@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('./assets/font/Poppins-Light.ttf');
+}
+  
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('./assets/font/Poppins-Black.ttf');
+}
+  
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./assets/font/Poppins-Bold.ttf');
+}
+  
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('./assets/font/Poppins-Medium.ttf');
+}
+  
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./assets/font/Poppins-Regular.ttf');
+}
+
+:root{
+    --font-default: 1.5rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins-Light', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex;
+    justify-content: center; */
+    font-size: var(--font-default);
+    color: white;
+    background-color: black;
+    font-weight: 600;
+}
+sup{
+    color: red;
+    font-weight: bolder;
+}
+button{
+    font-size: var(--font-default);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+@media (max-width: 550px) {
+    :root{
+        --font-default: 1rem;
+    }
+}
+
+.container{
+    background-color: #111;
+    overflow: hidden;
+}
+
+.intro{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.intro_text_container{
+    flex: 2.7;
+    padding: 4rem;
+}
+
+.intro_img_container{
+    flex: 1.3;
+}
+
+.intro_text{
+    font-size: 4.6vw;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-weight: 900;
+    color: #555;
+}
+
+.intro_img{
+    width: 100%;
+}
+
+.noah{
+    color: #555;
+}
+
+/* Solver */
+
+.solver{
+    height: 100vh;
+    padding: 2rem;
+    color: #555;
+    text-align: center;
+    justify-content: center;
+    /* background: rebeccapurple url('./assets/img/bg2.png'); */
+}
+
+.askval{
+    font-size: 3vw;
+    margin-top: 3.3rem;
+    margin: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.formof{
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+.equform{
+    font-family: 'Poppins-Bold', sans-serif;
+    color: #333;
+}
+
+.input_values{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 2rem;
+}
+
+.vals{
+    outline: none;
+    gap: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-left: 1.9rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #222;
+    color: #ccc;
+    padding: .5rem;
+}
+
+.vals::placeholder{
+    font-size: 1.1rem;
+    font-family: 'Poppins-Medium', sans-serif;
+    text-align: center;
+}
+
+.vals::-webkit-scrollbar{
+    display: none;
+}
+
+.solve{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: #222;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.sup{
+    color: #333;
+    font-weight: 900;
+}
+
+sup{
+    color: #555;
+}
+
+/* Bro chill!! */
+
+/* .purple{
+    background: rebeccapurple url('./assets/img/bg2.png');
+} */
+
+.githubContainer{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.githubTitle{
+    font-size: 100px;
+    color: #333;
+}
+
+.githubChart{
+    width: 820px;
+    text-align: center;
+}
+
+.dates{
+    padding: 10px;
+    color: #555;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 2s all ease;
+}
+
+.active:nth-child(4n){
+    background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n+1){
+    background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n){
+    background-color: #063f24;
+}
+
+.footer{
+    padding: 2rem;
+}
+
+.made{
+    text-align: center;
+    font-size: 1vw;
+    color: #666;
+}
+
+.love{
+    color: inherit;
+}
+
+@media screen and (max-width: 760px) {
+    .intro{
+        flex-direction: column;
+    }
+
+    .intro_text_container{
+        padding: 0;
+    }
+
+    .intro_text{
+        font-size: 7vw;
+    }
+
+    .askval{
+        font-size: 6vw;
+    }
+
+    .formof{
+        font-size: 4vw;
+    }
+
+    .githubContainer{
+        display: none;
+    }
+
+    .made{
+        font-size: 100%
+    }
+
+    .solver{
+        overflow: scroll;
+    }
+}
